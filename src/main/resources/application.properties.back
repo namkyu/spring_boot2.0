@@ -1,0 +1,8 @@
+# MBean, JMX
+spring.application.admin.enabled=true
+
+name=application.properties
+
+#spring.profiles.active=a,b
+
+root.prop=I am a root

@@ -1,0 +1,55 @@
+name: application.yml
+
+root:
+  prop: I am a root in the yml file
+spring:
+  application:
+    admin:
+      enabled: true
+
+
+---
+spring:
+  profiles: default
+nklee:
+  name: namkyu default
+mypojo:
+  list:
+  -
+    name: my name
+    descr: my description
+corsHostsAllow: http://foo1/
+
+---
+spring:
+  profiles: dev
+nklee:
+  name: namkyu dev
+mypojo:
+  list:
+  -
+    name: my name
+    descr: my description
+  -
+    name: another name
+    descr: another description
+corsHostsAllow: http://foo1/, http://foo2/
+
+---
+spring:
+  profiles: prod
+nklee:
+  name: namkyu prod
+mypojo:
+  list:
+  -
+    name: my name
+    descr: my description
+  -
+    name: another name
+    descr: another description
+  -
+    name: another name
+    descr: another description
+corsHostsAllow: http://foo1/, http://foo2/, http://foo3/
+
